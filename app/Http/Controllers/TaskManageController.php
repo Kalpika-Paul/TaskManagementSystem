@@ -35,7 +35,7 @@ class TaskManageController extends Controller
         return response()->json([
             'message' => 'Task created successfully',
             'task' => $task
-        ]);
+        ], 201);
     }
 
     public function show($id)
@@ -68,7 +68,7 @@ class TaskManageController extends Controller
         return response()->json([
             'message' => 'Task updated successfully',
             'task' => $task
-        ]);
+        ], 200);
     }
 
     public function destroy($id)

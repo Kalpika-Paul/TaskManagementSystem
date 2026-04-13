@@ -12,10 +12,9 @@ return new class extends Migration
 
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->enum('type', ['user', 'admin', 'Sales Person'])->default('user');
+            $table->enum('type', ['user', 'admin'])->default('user');
             $table->string('name');
             $table->string('phone')->nullable();
-            $table->string('branch');
             $table->string('email')->unique();
             $table->string('password');
             $table->string('auth_type')->nullable();
