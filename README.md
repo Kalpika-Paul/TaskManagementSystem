@@ -2,7 +2,7 @@ I used React Js for frontend and for backend I used laravel .
 The database was phpmyadmin.
 I used api.php to call api to the frontend.
 The frontend files are in resources->js->all files
-
+I used MySql for database
 
 
 
