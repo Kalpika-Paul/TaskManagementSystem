@@ -1,0 +1,162 @@
+
+.app-layout {
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+
+.main-content {
+  padding: 25px;
+  margin-left: 260px;
+  transition: 0.3s ease;
+}
+
+
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: linear-gradient(180deg, #0f172a, #111c36);
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+
+.logo {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+
+.nav-area {
+  margin-top: 10px;
+}
+
+.nav-area a {
+  color: #cbd5e1;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-area a:hover {
+  background: #1e293b;
+}
+
+.nav-area a.active {
+  background: #2563eb;
+  color: white;
+}
+
+
+.sidebar-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 15px;
+}
+
+
+.user-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  background: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+
+.logout-btn {
+  width: 100%;
+}
+
+
+.mobile-header {
+  display: none;
+}
+
+
+.sidebar-overlay {
+  display: none;
+}
+
+
+.sidebar-close {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0 !important;
+    padding: 15px;
+  }
+
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+
+  .sidebar {
+    left: -260px;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 900;
+  }
+
+  .sidebar-overlay.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .sidebar-close {
+    display: block;
+    text-align: right;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+
+
+@media (min-width: 769px) {
+  .sidebar {
+    left: 0 !important;
+  }
+}
