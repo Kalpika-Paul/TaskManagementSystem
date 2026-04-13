@@ -1,3 +1,11 @@
+I used React Js for frontend and for backend I used laravel . 
+The database was phpmyadmin.
+I used api.php to call api to the frontend.
+The frontend files are in resources->js->all files
+
+
+
+
 <<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
